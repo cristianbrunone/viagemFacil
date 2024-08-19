@@ -599,6 +599,35 @@ body {
 
 }
 
+@media (max-width: 1199px) and (min-width: 992px) {
+    #custom-slider-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #custom-slider-container .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #custom-card-container .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #custom-slider-container .col-lg-6:first-child {
+        order: 1;
+        width: 100%;
+        /* Slider arriba */
+    }
+
+    #custom-slider-container .col-lg-6:last-child {
+        order: 2;
+        width: 100%;
+        flex-direction: row;
+        /* Cards abajo */
+    }
+}
 
 /* Dispositivos com largura máxima de 1200px (ex: tablets em paisagem) */
 @media (max-width: 1200px) {
